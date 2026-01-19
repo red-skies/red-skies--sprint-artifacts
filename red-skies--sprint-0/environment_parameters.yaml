@@ -1,0 +1,39 @@
+sim_definition:
+  sim: JSBSim               # JSBSim | VRForces
+  required_sim_entities:
+    id: 1
+      type: aircraft
+      model: Cessna C310
+    id: 2
+      type: fire
+      model: Fire_Object
+  replan_every_x_steps: 1   # replan every simulation step (baseline)
+
+suppression_materials:
+  material:
+    id: water
+    name: Water Drop
+    type: hold
+    hold_duration_s: 3
+    distance_from_target:
+      min_km: 20 # Nose directed at fire
+      max_km: 30 # Max distance for effective suppression
+    heading_at_target: true
+    heading_deg:
+      min_deg: -5
+      max_deg: 5
+
+  material:
+    id: substance
+    name: Substance Drop
+    type: hold
+    hold_duration_s: 12
+    ps_probability_pct:
+      min: 0.7
+      max: 0.9
+    distance_from_target:
+      min_km: 1
+      max_km: 4
+    target_heading_radials:
+      min_rad: 150
+      max_rad: 210

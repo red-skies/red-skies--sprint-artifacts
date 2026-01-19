@@ -1,0 +1,107 @@
+scenario:
+  type: Urban
+  sim_scenario_id: xx # Identifier of the SIM scenario, the artefacts that make up a scenario in the sim
+  start_delay_time_s: 0 # Delay mission start by X seconds. This is in addition to the simulation waiting until the environment is ready to execute the mission
+  duration: 7200 # 2 hours
+  replan_every_x_steps: 1   # 1 = every step, >1 = every N steps. Later introduce event-driven replan (e.g. fire suppressed)
+  fire_supression_ps_logic: "f(current_sim_time) = rand(0..1)" # Can replace function with other functions given available meta-data
+  planning_logic:
+    fire_on_window:
+      weight: 0.7
+    fire_distance:
+      weight: 0.3
+  fires_nfz: # Default NFZ area for fires
+    radius_m: 3000
+
+playground: # 400x400 km
+  name: Atlantic ocean test
+  bounding_box: --> Atlantic middle of ocean (400x400), constraint
+    min_lat: 31.65
+    min_lon: 34.45
+    max_lat: 31.85
+    max_lon: 34.75
+
+operating_zones: --> only 1, 200x200 km
+  - id: oz_1
+    name: Northern Sector
+    polygon: # GeoJSON -> Geometry format
+      - lat: 31.70
+        lon: 34.50
+      - lat: 31.80
+        lon: 34.50
+      - lat: 31.80
+        lon: 34.65
+      - lat: 31.70
+        lon: 34.65
+
+no_fly_zones:
+  - id: nfz_1
+    name: Civil Airport
+    type: circle
+    circle:
+      centroid:
+        lat: 31.78
+        lon: 34.60
+      radius_m: 3000
+    schedule_on:
+      - from_s: 0
+        to_s: 900
+      - from_s: 1800
+        to_s: 3600
+
+  - id: nfz_2
+    name: Military Area
+    type: polygon
+    polygon: # --> GeoJSON
+      - lat: 31.72
+        lon: 34.55
+      - lat: 31.75
+        lon: 34.55
+      - lat: 31.75
+        lon: 34.58
+      - lat: 31.72
+        lon: 34.58
+    schedule_on:
+      - from_s: 0
+        to_s: 3600
+
+fires:
+  - id: fire_1
+    name: Hilltop Fire
+    initial_position:
+      lat: 31.74
+      lon: 34.56
+    schedule_on:
+      - from_s: 0 # status=active
+        to_s: 1800
+
+  - id: fire_2
+    name: Valley Fire
+    initial_position:
+      lat: 31.79
+      lon: 34.62
+    schedule_on:
+      - from_s: 900 # status=pending
+        to_s: 3600
+
+aircraft: # Find model, define meta-data, and Shimon will define constraints
+  - id: ac_1
+    name: FireBird-01
+    initial_position:
+      type: manual
+      lat: 31.68
+      lon: 34.48
+      speed_m_s: 70        # initial cruise speed
+      heading_deg: 90      # east
+      altitude: 100        # ft
+    suppression:
+      material_id: water
+      quantity: 12000
+  missions:
+    patrol:
+      id: 1
+      type: manual # Indicating the path is fixed (waypoints)
+      
+    suppress_fire:
+      id: 2
+      type: auto # indicating this is controlled by an RL agent

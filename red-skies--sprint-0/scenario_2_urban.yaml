@@ -1,0 +1,146 @@
+mission_definition:
+  type: Urban
+  sim_scenario_id: xx # Identifier of the SIM scenario, the artefacts that make up a scenario in the sim
+  start_delay_time_s: 0 # Delay mission start by X seconds. This is in addition to the simulation waiting until the environment is ready to execute the mission
+  duration: 7200 # 2 hours
+  replan_every_x_steps: 1   # 1 = every step, >1 = every N steps. Later introduce event-driven replan (e.g. fire suppressed)
+  fire_supression_ps_logic: "f(current_sim_time) = rand(0..1)" # Can replace function with other functions given available meta-data
+  planning_logic:
+    fire_on_window:
+      weight: 0.7
+    fire_distance:
+      weight: 0.3
+
+reward_config:
+  fire_suppression_reward:
+    time_limit: 15m
+    calculation_tick_s: 1
+    supression_reward: f(remaining_time_to_target) # Decay function considering time remaining 
+  total_suppression_reward:
+    calculation_tick_s: 1
+    suppression_reward: f(remaining_mission_duration, total_fires, total_suppressed_fires) # Decay function for remaining duration of mission  
+  nfz_violation: -200
+    
+playground:
+  name: Atlantic ocean
+  region:
+    - type: Feature
+      properties:
+        name: Atlantic ocean
+        box: 400km
+        center:
+          lat: 30.0
+          lon: -40.0
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [-42.076894, 28.201357]
+            - [-37.923106, 28.201357]
+            - [-37.923106, 31.798643]
+            - [-42.076894, 31.798643]
+            - [-42.076894, 28.201357]
+
+suppression_zone:
+  name: Area in Atlantic ocean
+  region:
+    - type: Feature
+      properties:
+        name: atlantic_mid
+        box: 200km
+        center:
+          lat: 30.0
+          lon: -40.0
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [-41.038447, 29.100678]
+            - [-38.961553, 29.100678]
+            - [-38.961553, 30.899322]
+            - [-41.038447, 30.899322]
+            - [-41.038447, 29.100678]
+
+aircraft: # Find model, define meta-data, and Shimon will define constraints
+  - id: ac_1
+    name: FireBird-01
+    initial_position:
+      type: manual
+      lat: 31.68
+      lon: 34.48
+      speed_ms: 70        # initial cruise speed
+      heading_deg: 90      # east
+      altitude: 100        # Keep it fixed (2D operation) for phase 1, phase 2, 3D
+    suppression_material: water
+    misssions:
+      patrol:
+        lat: 31.68 # When removed, patrol from current location
+        lon: 34.48
+        radius_km: 10
+        speed_ms: 100
+      fire_suppression: true
+
+  - id: ac_2
+    name: FireBird-02
+    initial_position:
+      type: auto # Logic for initial position placement (based on training): Train on multiple scenarios, test on similar and other (potentially fine-tuning)
+      speed_m_s: 70        # initial cruise speed
+      heading_deg: 90      # east
+      altitude: 100        # ft
+    suppression_material: water
+    misssions:
+      patrol:
+        lat: 31.68 # When removed, patrol from current location
+        lon: 34.48
+        radius_km: 10
+        speed_ms: 100
+      fire_suppression: true
+
+no_fly_zones:
+  - id: nfz_1
+    name: Civil Airport
+    type: circle
+    circle:
+      centroid:
+        lat: 31.78
+        lon: 34.60
+      radius_km: 10 # Possible values: 10, 15, 25
+    schedule_on:
+      - from_s: 600 # --> starts after 600_s from 
+        to_s: 1800
+
+  - id: nfz_2
+    name: Military Area
+    region:
+      type: Feature
+      properties:
+        name: Military Area
+        box: 200km
+        center:
+          lat: 30.0
+          lon: -40.0
+      geometry:
+        type: Polygon
+        coordinates:
+          - - [-41.038447, 29.100678]
+            - [-38.961553, 29.100678]
+            - [-38.961553, 30.899322]
+            - [-41.038447, 30.899322]
+            - [-41.038447, 29.100678]
+    schedule_on: # Without from_s and to_s --> active / fixed for entire scenario
+
+fires:
+  - id: fire_1
+    name: Hilltop Fire
+    initial_position:
+      lat: 31.74
+      lon: 34.56
+    schedule_on:
+      - from_s: 0 # status=active
+        to_s: 1800
+  - id: fire_2
+    name: Valley Fire
+    initial_position:
+      lat: 31.79
+      lon: 34.62
+    schedule_on:
+      - from_s: 900 # status=pending
+        to_s: 3600
