@@ -1,0 +1,108 @@
+duration: 7200
+
+playground:
+  name: Atlantic ocean
+  region:
+    - type: Feature
+      properties:
+        name: atlantic_mid
+        box: 200km
+        center:
+          lat: 30
+          lon: -40
+      geometry:
+        type: Polygon
+        coordinates:
+          - - -41.038447
+            - 29.100678
+          - -38.961553
+            - 29.100678
+          - -38.961553
+            - 30.899322
+          - -41.038447
+            - 30.899322
+          - -41.038447
+            - 29.100678
+
+suppression_zone:
+  type: circle
+  circle:
+    centroid:
+      lat: 29.8201356
+      lon: -40.2076894
+    radius_km: 170
+
+no_fly_zones:
+  - id: nfz_1767161526954
+    name: nfz_1767161526954
+    type: circle
+    circle:
+      centroid:
+        lat: 30.725297006907784
+        lon: -40.06164550781251
+      radius_km: 6
+
+  - id: nfz_1767161531299
+    name: nfz_1767161531299
+    type: circle
+    circle:
+      centroid:
+        lat: 30.232952424413543
+        lon: -40.42419433593751
+      radius_km: 6
+
+  - id: nfz_1767161569108
+    name: nfz_1767161569108
+    type: circle
+    circle:
+      centroid:
+        lat: 30.206853837629893
+        lon: -39.89123535156251
+      radius_km: 6
+
+  - id: nfz_1767162193969
+    name: nfz_1767162193969
+    type: circle
+    circle:
+      centroid:
+        lat: 29.810764502543588
+        lon: -39.63043212890626
+      radius_km: 20
+
+  - id: nfz_1767162287624
+    name: nfz_1767162287624
+    type: circle
+    circle:
+      centroid:
+        lat: 29.31512806589868
+        lon: -40.73181152343751
+      radius_km: 15
+
+  - id: nfz_1767162313368
+    name: nfz_1767162313368
+    type: circle
+    circle:
+      centroid:
+        lat: 29.484677989258145
+        lon: -39.35852050781251
+      radius_km: 20
+
+fires:
+  - id: fire_center
+    name: fire_center
+    initial_position:
+      lat: 29.8201356
+      lon: -40.2076894
+
+aircraft:
+  - id: aircraft_1
+    name: patrol_aircraft
+    initial_position:
+      lat: 29.8201356
+      lon: -40.2076894
+    missions:
+      - type: patrol
+        center:
+          lat: 29.8201356
+          lon: -40.2076894
+        radius_km: 100
