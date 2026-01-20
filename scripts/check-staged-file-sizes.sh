@@ -1,13 +1,10 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 set -eu
 
 MAX_BYTES=$((15 * 1024 * 1024))
 
-# NUL-delimited list of staged paths
-staged=$(git diff --cached --name-only -z)
-
-# Iterate NUL-delimited entries safely
-printf "%s" "$staged" | while IFS= read -r -d '' path; do
+# Iterate NUL-delimited staged paths safely
+while IFS= read -r -d '' path; do
   # size of staged blob (preferred)
   size=$(git cat-file -s ":$path" 2>/dev/null || true)
   if [ -z "$size" ]; then
@@ -30,4 +27,4 @@ printf "%s" "$staged" | while IFS= read -r -d '' path; do
     echo "If intentional, consider Git LFS or store large artifacts outside this repo." 1>&2
     exit 1
   fi
-done
+done < <(git diff --cached --name-only -z)

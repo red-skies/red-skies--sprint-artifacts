@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -eu
 
-sh scripts/check-staged-file-sizes.sh
+bash scripts/check-staged-file-sizes.sh
