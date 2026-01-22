@@ -21,10 +21,10 @@ mission:
       vehicle_type: cessna310
       initial_state:
         position:
-          lat: 31.7
-          lon: 34.0
+          lat: 30.92929435147895
+          lon: -41.021623718553485
           alt: 1500.0
-        heading: 0
+        heading: 134.8643926596137
         speed: 90.0
 
   objects_scenario_file: "objects.yaml"

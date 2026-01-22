@@ -1,5 +1,19 @@
 objects:
-- id: nfz_1767161526954
+- id: playground
+  type: circle
+  description: ""
+  geolocation:
+    - lat: 30.014917755059212
+      lon: -39.96563379693132
+      alt: 1500.0
+  radius:
+    - 143536.73999884145
+  behavior: ""
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1
   type: circle
   description: nfz_1767161526954
   geolocation:
@@ -13,7 +27,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161531299
+- id: nfz_2
   type: circle
   description: nfz_1767161531299
   geolocation:
@@ -27,7 +41,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161569108
+- id: nfz_3
   type: circle
   description: nfz_1767161569108
   geolocation:
@@ -41,7 +55,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161722758
+- id: nfz_4
   type: circle
   description: nfz_1767161722758
   geolocation:
@@ -55,7 +69,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161728113
+- id: nfz_5
   type: circle
   description: nfz_1767161728113
   geolocation:
@@ -69,7 +83,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161770963
+- id: nfz_6
   type: circle
   description: nfz_1767161770963
   geolocation:
@@ -83,7 +97,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161796148
+- id: nfz_7
   type: circle
   description: nfz_1767161796148
   geolocation:
@@ -97,7 +111,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161897634
+- id: nfz_8
   type: circle
   description: nfz_1767161897634
   geolocation:
@@ -111,7 +125,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161940265
+- id: nfz_9
   type: circle
   description: nfz_1767161940265
   geolocation:
@@ -125,7 +139,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161965654
+- id: nfz_10
   type: circle
   description: nfz_1767161965654
   geolocation:
@@ -139,7 +153,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161974889
+- id: nfz_11
   type: circle
   description: nfz_1767161974889
   geolocation:
@@ -153,7 +167,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161983114
+- id: nfz_12
   type: circle
   description: nfz_1767161983114
   geolocation:
@@ -167,7 +181,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767161995285
+- id: nfz_13
   type: circle
   description: nfz_1767161995285
   geolocation:
@@ -181,7 +195,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767162179761
+- id: nfz_14
   type: circle
   description: nfz_1767162179761
   geolocation:
@@ -195,7 +209,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767162191288
+- id: nfz_15
   type: circle
   description: nfz_1767162191288
   geolocation:
@@ -209,7 +223,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767162193969
+- id: nfz_16
   type: circle
   description: nfz_1767162193969
   geolocation:
@@ -223,7 +237,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767162287624
+- id: nfz_17
   type: circle
   description: nfz_1767162287624
   geolocation:
@@ -237,7 +251,7 @@ objects:
     initial_state: 1
     probability: 0.0
     time: .inf
-- id: nfz_1767162313368
+- id: nfz_18
   type: circle
   description: nfz_1767162313368
   geolocation:
