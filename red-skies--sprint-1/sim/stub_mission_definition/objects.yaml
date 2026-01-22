@@ -1,0 +1,29 @@
+objects:
+  - id: playground
+    type: circle
+    description: ""
+    geolocation:
+      - lat: 32.0
+        lon: 34.0
+        alt: 1500.0
+    radius:
+      - 10000.0
+    behavior: ""
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz_0
+    type: circle
+    description: ""
+    geolocation:
+      - lat: 31.8
+        lon: 34.0
+        alt: 1500.0
+    radius:
+      - 1000.0
+    behavior: ""
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf

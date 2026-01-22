@@ -1,108 +1,218 @@
-duration: 7200
-
+scenario:
+  duration_s: 7200
+  
 playground:
-  name: Atlantic ocean
-  region:
-    - type: Feature
-      properties:
-        name: atlantic_mid
-        box: 200km
-        center:
-          lat: 30
-          lon: -40
-      geometry:
-        type: Polygon
-        coordinates:
-          - - -41.038447
-            - 29.100678
-          - -38.961553
-            - 29.100678
-          - -38.961553
-            - 30.899322
-          - -41.038447
-            - 30.899322
-          - -41.038447
-            - 29.100678
+   name: Atlantic ocean
+   region:
+     - type: Feature
+       properties:
+         name: Atlantic ocean
+         box: 400km
+         center:
+           lat: 30
+           lon: -40
+       geometry:
+         type: Polygon
+         coordinates:
+           - - - -42.076894
+               - 28.201357
+             - - -37.923106
+               - 28.201357
+             - - -37.923106
+               - 31.798643
+             - - -42.076894
+               - 31.798643
+             - - -42.076894
+               - 28.201357
 
 suppression_zone:
-  type: circle
-  circle:
-    centroid:
-      lat: 29.8201356
-      lon: -40.2076894
-    radius_km: 170
+   name: Area in Atlantic ocean
+   region:
+     - type: Feature
+       properties:
+         name: atlantic_mid
+         box: 200km
+         center:
+           lat: 30
+           lon: -40
+       geometry:
+         type: Polygon
+         coordinates:
+           - - - -41.038447
+               - 29.100678
+             - - -38.961553
+               - 29.100678
+             - - -38.961553
+               - 30.899322
+             - - -41.038447
+               - 30.899322
+             - - -41.038447
+               - 29.100678
+
+aircraft: # Find model, define meta-data, and Shimon will define constraints
+   - id: ac_1
+     name: FireBird-01
+     initial_position:
+       type: manual
+       lat: 30.80939
+       lon: -40.934602
+       heading_deg: 90
+       altitude: 100
+     misssions:
+       patrol:
+         lat: 30
+         lon: -40
+         radius_km: 100
+      
+fires:
+   - id: fire_1767161868149
+     name: fire_1767161868149
+     initial_position:
+       lat: 29.769205270178112
+       lon: -39.95727539062501
 
 no_fly_zones:
-  - id: nfz_1767161526954
-    name: nfz_1767161526954
-    type: circle
-    circle:
-      centroid:
-        lat: 30.725297006907784
-        lon: -40.06164550781251
-      radius_km: 6
-
-  - id: nfz_1767161531299
-    name: nfz_1767161531299
-    type: circle
-    circle:
-      centroid:
-        lat: 30.232952424413543
-        lon: -40.42419433593751
-      radius_km: 6
-
-  - id: nfz_1767161569108
-    name: nfz_1767161569108
-    type: circle
-    circle:
-      centroid:
-        lat: 30.206853837629893
-        lon: -39.89123535156251
-      radius_km: 6
-
-  - id: nfz_1767162193969
-    name: nfz_1767162193969
-    type: circle
-    circle:
-      centroid:
-        lat: 29.810764502543588
-        lon: -39.63043212890626
-      radius_km: 20
-
-  - id: nfz_1767162287624
-    name: nfz_1767162287624
-    type: circle
-    circle:
-      centroid:
-        lat: 29.31512806589868
-        lon: -40.73181152343751
-      radius_km: 15
-
-  - id: nfz_1767162313368
-    name: nfz_1767162313368
-    type: circle
-    circle:
-      centroid:
-        lat: 29.484677989258145
-        lon: -39.35852050781251
-      radius_km: 20
-
-fires:
-  - id: fire_center
-    name: fire_center
-    initial_position:
-      lat: 29.8201356
-      lon: -40.2076894
-
-aircraft:
-  - id: aircraft_1
-    name: patrol_aircraft
-    initial_position:
-      lat: 29.8201356
-      lon: -40.2076894
-    missions:
-      - type: patrol
-        center:
-          lat: 29.8201356
-          lon: -40.2076894
-        radius_km: 100
+   - id: nfz_1767161526954
+     name: nfz_1767161526954
+     type: circle
+     circle:
+       centroid:
+         lat: 30.725297006907784
+         lon: -40.06164550781251
+       radius_km: 6
+   - id: nfz_1767161531299
+     name: nfz_1767161531299
+     type: circle
+     circle:
+       centroid:
+         lat: 30.232952424413543
+         lon: -40.42419433593751
+       radius_km: 6
+   - id: nfz_1767161569108
+     name: nfz_1767161569108
+     type: circle
+     circle:
+       centroid:
+         lat: 30.206853837629893
+         lon: -39.46838378906251
+       radius_km: 15
+   - id: nfz_1767161722758
+     name: nfz_1767161722758
+     type: circle
+     circle:
+       centroid:
+         lat: 30.07385209711348
+         lon: -40.70983886718751
+       radius_km: 10
+   - id: nfz_1767161728113
+     name: nfz_1767161728113
+     type: circle
+     circle:
+       centroid:
+         lat: 29.71618878280715
+         lon: -40.62744140625001
+       radius_km: 15
+   - id: nfz_1767161770963
+     name: nfz_1767161770963
+     type: circle
+     circle:
+       centroid:
+         lat: 29.79535895317893
+         lon: -39.93530273437501
+       radius_km: 42.39910096806246
+   - id: nfz_1767161796148
+     name: nfz_1767161796148
+     type: circle
+     circle:
+       centroid:
+         lat: 30.519687036940812
+         lon: -40.5889892578125
+       radius_km: 41.404314905578346
+   - id: nfz_1767161897634
+     name: nfz_1767161897634
+     type: circle
+     circle:
+       centroid:
+         lat: 29.328941996152366
+         lon: -40.18249511718751
+       radius_km: 10
+   - id: nfz_1767161940265
+     name: nfz_1767161940265
+     type: circle
+     circle:
+       centroid:
+         lat: 30.36342943687182
+         lon: -39.891357421875
+       radius_km: 35.09234919335943
+   - id: nfz_1767161965654
+     name: nfz_1767161965654
+     type: circle
+     circle:
+       centroid:
+         lat: 30.62371611709809
+         lon: -39.28161621093751
+       radius_km: 33.883820191781325
+   - id: nfz_1767161974889
+     name: nfz_1767161974889
+     type: circle
+     circle:
+       centroid:
+         lat: 29.940277053448302
+         lon: -39.11132812500001
+       radius_km: 6
+   - id: nfz_1767161983114
+     name: nfz_1767161983114
+     type: circle
+     circle:
+       centroid:
+         lat: 29.40131513797947
+         lon: -39.254150390625
+       radius_km: 33.350547882245586
+   - id: nfz_1767161995285
+     name: nfz_1767161995285
+     type: circle
+     circle:
+       centroid:
+         lat: 29.39653082428321
+         lon: -39.6881103515625
+       radius_km: 6
+   - id: nfz_1767162179761
+     name: nfz_1767162179761
+     type: circle
+     circle:
+       centroid:
+         lat: 29.71310607206852
+         lon: -40.21133422851563
+       radius_km: 20
+   - id: nfz_1767162191288
+     name: nfz_1767162191288
+     type: circle
+     circle:
+       centroid:
+         lat: 29.7858382929665
+         lon: -39.93255615234375
+       radius_km: 6
+   - id: nfz_1767162193969
+     name: nfz_1767162193969
+     type: circle
+     circle:
+       centroid:
+         lat: 29.810764502543588
+         lon: -39.63043212890626
+       radius_km: 20
+   - id: nfz_1767162287624
+     name: nfz_1767162287624
+     type: circle
+     circle:
+       centroid:
+         lat: 29.31512806589868
+         lon: -40.73181152343751
+       radius_km: 15
+   - id: nfz_1767162313368
+     name: nfz_1767162313368
+     type: circle
+     circle:
+       centroid:
+         lat: 29.484677989258145
+         lon: -39.35852050781251
+       radius_km: 20

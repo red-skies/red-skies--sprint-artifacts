@@ -1,0 +1,253 @@
+objects:
+- id: nfz_1767161526954
+  type: circle
+  description: nfz_1767161526954
+  geolocation:
+  - lat: 30.725297006907784
+    lon: -40.06164550781251
+    alt: 1500.0
+  radius:
+  - 6000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161531299
+  type: circle
+  description: nfz_1767161531299
+  geolocation:
+  - lat: 30.232952424413543
+    lon: -40.42419433593751
+    alt: 1500.0
+  radius:
+  - 6000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161569108
+  type: circle
+  description: nfz_1767161569108
+  geolocation:
+  - lat: 30.206853837629893
+    lon: -39.46838378906251
+    alt: 1500.0
+  radius:
+  - 15000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161722758
+  type: circle
+  description: nfz_1767161722758
+  geolocation:
+  - lat: 30.07385209711348
+    lon: -40.70983886718751
+    alt: 1500.0
+  radius:
+  - 10000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161728113
+  type: circle
+  description: nfz_1767161728113
+  geolocation:
+  - lat: 29.71618878280715
+    lon: -40.62744140625001
+    alt: 1500.0
+  radius:
+  - 15000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161770963
+  type: circle
+  description: nfz_1767161770963
+  geolocation:
+  - lat: 29.79535895317893
+    lon: -39.93530273437501
+    alt: 1500.0
+  radius:
+  - 42399.10096806246
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161796148
+  type: circle
+  description: nfz_1767161796148
+  geolocation:
+  - lat: 30.519687036940812
+    lon: -40.5889892578125
+    alt: 1500.0
+  radius:
+  - 41404.31490557834
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161897634
+  type: circle
+  description: nfz_1767161897634
+  geolocation:
+  - lat: 29.328941996152366
+    lon: -40.18249511718751
+    alt: 1500.0
+  radius:
+  - 10000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161940265
+  type: circle
+  description: nfz_1767161940265
+  geolocation:
+  - lat: 30.36342943687182
+    lon: -39.891357421875
+    alt: 1500.0
+  radius:
+  - 35092.349193359434
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161965654
+  type: circle
+  description: nfz_1767161965654
+  geolocation:
+  - lat: 30.62371611709809
+    lon: -39.28161621093751
+    alt: 1500.0
+  radius:
+  - 33883.82019178133
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161974889
+  type: circle
+  description: nfz_1767161974889
+  geolocation:
+  - lat: 29.940277053448302
+    lon: -39.11132812500001
+    alt: 1500.0
+  radius:
+  - 6000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161983114
+  type: circle
+  description: nfz_1767161983114
+  geolocation:
+  - lat: 29.40131513797947
+    lon: -39.254150390625
+    alt: 1500.0
+  radius:
+  - 33350.547882245584
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767161995285
+  type: circle
+  description: nfz_1767161995285
+  geolocation:
+  - lat: 29.39653082428321
+    lon: -39.6881103515625
+    alt: 1500.0
+  radius:
+  - 6000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767162179761
+  type: circle
+  description: nfz_1767162179761
+  geolocation:
+  - lat: 29.71310607206852
+    lon: -40.21133422851563
+    alt: 1500.0
+  radius:
+  - 20000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767162191288
+  type: circle
+  description: nfz_1767162191288
+  geolocation:
+  - lat: 29.7858382929665
+    lon: -39.93255615234375
+    alt: 1500.0
+  radius:
+  - 6000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767162193969
+  type: circle
+  description: nfz_1767162193969
+  geolocation:
+  - lat: 29.810764502543588
+    lon: -39.63043212890626
+    alt: 1500.0
+  radius:
+  - 20000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767162287624
+  type: circle
+  description: nfz_1767162287624
+  geolocation:
+  - lat: 29.31512806589868
+    lon: -40.73181152343751
+    alt: 1500.0
+  radius:
+  - 15000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf
+- id: nfz_1767162313368
+  type: circle
+  description: nfz_1767162313368
+  geolocation:
+  - lat: 29.484677989258145
+    lon: -39.35852050781251
+    alt: 1500.0
+  radius:
+  - 20000.0
+  behavior: no_fly_zone
+  parameters:
+    initial_state: 1
+    probability: 0.0
+    time: .inf

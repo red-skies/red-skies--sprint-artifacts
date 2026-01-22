@@ -1,0 +1,30 @@
+mission:
+  id: "Avoid-NFZ"
+  description: "Multi-agent NFZ avoidance experiment"
+
+  agents:
+    - id: holding_agent
+      platform_ref: aircraft
+      env_config: ~
+      agent_config:
+        path: holding_agent_final.zip
+        policy: ~
+        extra:
+          playground_uid: playground
+          turn_rate_deg_s: 30.0
+          num_rays: 24
+          max_lidar_range: 2000.0
+
+  platforms:
+    - uid: aircraft
+      engine: jsbsim
+      vehicle_type: cessna310
+      initial_state:
+        position:
+          lat: 31.7
+          lon: 34.0
+          alt: 1500.0
+        heading: 0
+        speed: 90.0
+
+  objects_scenario_file: "objects.yaml"
