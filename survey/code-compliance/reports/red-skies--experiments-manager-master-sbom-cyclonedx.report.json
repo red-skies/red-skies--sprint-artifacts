@@ -1,0 +1,120 @@
+{
+  "summary": {
+    "ok": 9,
+    "flag": 0,
+    "unknown": 1,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "cors",
+      "version": "^2.8.5",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Troy Goode",
+      "author_email": "troygoode@gmail.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "express",
+      "version": "^4.19.2",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "TJ Holowaychuk",
+      "author_email": "tj@vision-media.ca",
+      "origin_country": "Canada",
+      "enriched": true
+    },
+    {
+      "name": "js-yaml",
+      "version": "^4.1.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Vladimir Zapparov",
+      "author_email": "dervus.grim@gmail.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "leaflet",
+      "version": "^1.9.4",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react",
+      "version": "^18.3.1",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react-dom",
+      "version": "^18.3.1",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react-leaflet",
+      "version": "^4.2.1",
+      "ecosystem": "npm",
+      "license": "Hippocratic-2.1",
+      "policy": "unknown",
+      "author_name": "Paul Le Cam",
+      "author_email": "paul@ulem.net",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@vitejs/plugin-react",
+      "version": "^4.3.4",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Evan You",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "concurrently",
+      "version": "^9.1.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Kimmo Brunfeldt",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "vite",
+      "version": "^6.0.6",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Evan You",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

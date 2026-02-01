@@ -1,0 +1,27 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:skysim_bridge-main-2026-01-29T12:35:59.586390",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.586401Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "skysim_bridge-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "websockets>=12.0",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/websockets>=12.0"
+    }
+  ]
+}

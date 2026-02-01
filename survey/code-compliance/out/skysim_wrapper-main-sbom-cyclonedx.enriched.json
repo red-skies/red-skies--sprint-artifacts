@@ -1,0 +1,75 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:skysim_wrapper-main-2026-01-29T12:35:59.587220",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.587229Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "skysim_wrapper-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "0.7.3",
+      "group": "dev-tooling",
+      "purl": "pkg:pypi/loguru@0.7.3",
+      "supplier": {
+        "name": "Delgan <delgan.py@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Delgan/loguru"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pydantic",
+      "version": "2.12.5",
+      "group": "other",
+      "purl": "pkg:pypi/pydantic@2.12.5",
+      "supplier": {
+        "name": "Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>, Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>, Terrence Dorsey <terry@pydantic.dev>, David Montague <david@pydantic.dev>, Serge Matveenko <lig@countzero.co>, Marcelo Trylesinski <marcelotryle@gmail.com>, Sydney Runkle <sydneymarierunkle@gmail.com>, David Hewitt <mail@davidhewitt.io>, Alex Hall <alex.mojaki@gmail.com>, Victorien Plot <contact@vctrn.dev>, Douwe Maan <hi@douwe.me>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/pydantic/pydantic"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "group": "config-data",
+      "purl": "pkg:pypi/pyyaml@6.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Kirill Simonov"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pyyaml.org/"
+        }
+      ]
+    }
+  ]
+}

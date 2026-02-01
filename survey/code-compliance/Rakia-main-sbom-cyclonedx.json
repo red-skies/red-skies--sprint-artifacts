@@ -1,0 +1,90 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:Rakia-main-2026-01-29T12:00:47.109275",
+  "metadata": {
+    "timestamp": "2026-01-29T12:00:47.109285Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "Rakia-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "gymnasium",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/gymnasium"
+    },
+    {
+      "type": "library",
+      "name": "numpy",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/numpy"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/matplotlib"
+    },
+    {
+      "type": "library",
+      "name": "streamlit",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/streamlit"
+    },
+    {
+      "type": "library",
+      "name": "stable-baselines3[extra]",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/stable-baselines3[extra]"
+    },
+    {
+      "type": "library",
+      "name": "torch",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/torch"
+    },
+    {
+      "type": "library",
+      "name": "torchvision",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/torchvision"
+    },
+    {
+      "type": "library",
+      "name": "torchaudio",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/torchaudio"
+    },
+    {
+      "type": "library",
+      "name": "pyglet",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/pyglet"
+    },
+    {
+      "type": "library",
+      "name": "scipy",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/scipy"
+    }
+  ]
+}

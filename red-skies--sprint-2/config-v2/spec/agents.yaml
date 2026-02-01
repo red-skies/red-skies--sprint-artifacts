@@ -1,0 +1,119 @@
+agents:
+- id: holding-20260129-1143
+  title: NFZ avoidance holding agent
+  description: Agent policy configuration and hyperparameters (decoupled from scenario & simulator).
+  object_type: aircraft
+  artifact:
+    path: holding_agent_final.zip
+    policy: null
+  training_info:
+    simulator: jsbsim
+    aircraft_type: c310
+    metrics:
+      total_episodes: 120000
+      mean_reward: 34.2
+      policy_size: 8421376
+    validation_set:
+      size: 250
+      mean_complexity:
+        mean_fixed_nfzs: 18.0
+        mean_dynamic_nfzs: 0.0
+        mean_aircraft: 2.0
+        mean_duration: 1800.0
+  inference_info:
+    weights_path: ./artifacts/models/holding/weights-v0.0.1.pt
+    version: 0.0.1
+  hyperparameters:
+    playground_uid: playground-20260129-1143
+    turn_rate_deg_s: 30.0
+    num_rays: 24
+    max_lidar_range: 2000.0
+
+- id: fire-suppression-20260129-1143
+  title: Fire suppression agent
+  description: Agent specialized in planning and executing suppression of fires while obeying constraints.
+  object_type: aircraft
+  artifact:
+    path: fire_suppression_agent_final.zip
+    policy: null
+  training_info:
+    simulator: jsbsim
+    aircraft_type: c310
+    metrics:
+      total_episodes: 80000
+      mean_reward: 27.6
+      policy_size: 7340032
+    validation_set:
+      size: 200
+      mean_complexity:
+        mean_fixed_nfzs: 12.0
+        mean_dynamic_nfzs: 1.0
+        mean_aircraft: 2.0
+        mean_duration: 1800.0
+  inference_info:
+    weights_path: ./artifacts/models/fire_suppression/weights-v0.0.1.pt
+    version: 0.0.1
+  hyperparameters:
+    playground_uid: playground-20260129-1143
+    turn_rate_deg_s: 20.0
+    num_rays: 32
+    max_lidar_range: 2500.0
+
+- id: entry-point-optimizer-20260129-1143
+  title: Suppression zone entry-point optimizer
+  description: Agent that computes an optimal entry point and route into the suppression zone.
+  object_type: aircraft
+  artifact:
+    path: entry_point_optimizer_agent_final.zip
+    policy: null
+  training_info:
+    simulator: jsbsim
+    aircraft_type: c310
+    metrics:
+      total_episodes: 60000
+      mean_reward: 19.4
+      policy_size: 6291456
+    validation_set:
+      size: 150
+      mean_complexity:
+        mean_fixed_nfzs: 10.0
+        mean_dynamic_nfzs: 0.0
+        mean_aircraft: 1.0
+        mean_duration: 900.0
+  inference_info:
+    weights_path: ./artifacts/models/entry_point_optimizer/weights-v0.0.1.pt
+    version: 0.0.1
+  hyperparameters:
+    playground_uid: playground-20260129-1143
+    turn_rate_deg_s: 15.0
+    num_rays: 16
+    max_lidar_range: 5000.0
+- id: holding-v2-20260129-1143
+  title: NFZ avoidance holding agent v2
+  description: Agent policy configuration and hyperparameters (decoupled from scenario & simulator).
+  object_type: aircraft
+  artifact:
+    path: holding_agent_final_v2.zip
+    policy: null
+  training_info:
+    simulator: jsbsim
+    aircraft_type: c310
+    metrics:
+      total_episodes: 240000
+      mean_reward: 41.8
+      policy_size: 10349568
+    validation_set:
+      size: 500
+      mean_complexity:
+        mean_fixed_nfzs: 18.0
+        mean_dynamic_nfzs: 2.0
+        mean_aircraft: 2.0
+        mean_duration: 1800.0
+  inference_info:
+    weights_path: ./artifacts/models/holding/weights-v0.0.2.pt
+    version: 0.0.2
+  hyperparameters:
+    playground_uid: playground-20260129-1143
+    turn_rate_deg_s: 30.0
+    num_rays: 24
+    max_lidar_range: 2000.0

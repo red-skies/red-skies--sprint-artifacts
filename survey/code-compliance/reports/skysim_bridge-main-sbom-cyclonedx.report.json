@@ -1,0 +1,21 @@
+{
+  "summary": {
+    "ok": 0,
+    "flag": 0,
+    "unknown": 1,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "websockets>=12.0",
+      "version": "16.0",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Aymeric Augustin <aymeric.augustin@m4x.org>",
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

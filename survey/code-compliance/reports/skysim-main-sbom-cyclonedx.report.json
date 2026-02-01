@@ -1,0 +1,76 @@
+{
+  "summary": {
+    "ok": 2,
+    "flag": 0,
+    "unknown": 4,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "geographiclib",
+      "version": "2.1",
+      "ecosystem": "pypi",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Charles Karney",
+      "author_email": "karney@alum.mit.edu",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "jsbsim",
+      "version": "1.2.3",
+      "ecosystem": "pypi",
+      "license": "LGPL 2.1",
+      "policy": "unknown",
+      "author_name": "Jon S. Berndt et al.",
+      "author_email": "jsbsim-users@lists.sourceforge.net",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "pynput",
+      "version": "1.8.1",
+      "ecosystem": "pypi",
+      "license": "LGPLv3",
+      "policy": "unknown",
+      "author_name": "Moses Palm\u00e9r",
+      "author_email": "moses.palmer@gmail.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "pytest",
+      "version": "9.0.2",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": "Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin, Others (See AUTHORS)",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.3",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Delgan <delgan.py@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "ecosystem": "pypi",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Kirill Simonov",
+      "author_email": "xi@resolvent.net",
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

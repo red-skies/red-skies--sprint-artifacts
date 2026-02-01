@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "ok": 1,
+    "flag": 0,
+    "unknown": 2,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "fastapi",
+      "version": "0.110.0",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "=?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "uvicorn[standard]",
+      "version": "0.27.1",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Tom Christie <tom@tomchristie.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "httpx",
+      "version": "0.27.0",
+      "ecosystem": "pypi",
+      "license": "BSD-3-Clause",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": "Tom Christie <tom@tomchristie.com>",
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

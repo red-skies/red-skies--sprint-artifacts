@@ -1,0 +1,148 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:skysim-main-2026-01-29T12:00:47.111099",
+  "metadata": {
+    "timestamp": "2026-01-29T12:00:47.111112Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "skysim-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "geographiclib",
+      "version": "2.1",
+      "group": "other",
+      "purl": "pkg:pypi/geographiclib@2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Charles Karney"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://geographiclib.sourceforge.io/Python/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "jsbsim",
+      "version": "1.2.3",
+      "group": "simulation",
+      "purl": "pkg:pypi/jsbsim@1.2.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL 2.1"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Jon S. Berndt et al."
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/JSBSim-Team/jsbsim"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pynput",
+      "version": "1.8.1",
+      "group": "other",
+      "purl": "pkg:pypi/pynput@1.8.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPLv3"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Moses Palm\u00e9r"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/moses-palmer/pynput"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pytest",
+      "version": "9.0.2",
+      "group": "dev-tooling",
+      "purl": "pkg:pypi/pytest@9.0.2",
+      "supplier": {
+        "name": "Holger Krekel, Bruno Oliveira, Ronny Pfannschmidt, Floris Bruynooghe, Brianna Laugher, Florian Bruhin, Others (See AUTHORS)"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://docs.pytest.org/en/latest/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/pytest-dev/pytest"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "0.7.3",
+      "group": "dev-tooling",
+      "purl": "pkg:pypi/loguru@0.7.3",
+      "supplier": {
+        "name": "Delgan <delgan.py@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Delgan/loguru"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "PyYAML",
+      "version": "6.0.3",
+      "group": "config-data",
+      "purl": "pkg:pypi/PyYAML@6.0.3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Kirill Simonov"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://pyyaml.org/"
+        }
+      ]
+    }
+  ]
+}

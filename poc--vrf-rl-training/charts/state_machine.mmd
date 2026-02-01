@@ -1,0 +1,36 @@
+stateDiagram-v2
+    direction LR
+
+    [*] --> Idle
+
+    Idle --> LoadingScenario : load_scenario()
+    LoadingScenario --> Frozen : scenario_loaded
+
+    Frozen --> InitializingRedSkies : initialize_redskies()
+    note right of InitializingRedSkies
+        set_entity_state(lat, lon, heading, speed)
+        set_step_speed(20Hz / 50ms)
+    end note
+
+    InitializingRedSkies --> BroadcastState : init_complete
+
+    BroadcastState : broadcast entity_state
+
+    %% Training: freeze immediately after broadcast.
+    BroadcastState --> Frozen : training_mode
+
+    %% Training: each tick progresses one step.
+    Frozen --> ProcessingStep : training_tick
+
+    %% Inference: after broadcast, continue stepping.
+    BroadcastState --> ProcessingStep : inference_mode
+
+    %% After step, check if an action was provided.
+    ProcessingStep --> ProcessingAction : action_provided(entity_id, autopilot_cmd)
+    ProcessingStep --> BroadcastState : no_action
+
+    ProcessingAction --> BroadcastState : action_applied
+
+    Frozen --> Idle : reset_engine()
+
+    ProcessingAction --> Idle : stop_scenario()

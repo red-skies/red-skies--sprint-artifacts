@@ -1,0 +1,33 @@
+simulators:
+  jsbsim:
+    version: 1.2.0
+    models:
+    - id: jsbsim-c310-20260129-1143
+      type: c310
+      file_path: /opt/jsbsim/aircraft/c310
+      autonomous_tasks:
+      - unique_id: task-hold-c310-01-20260129-1143
+        name: hold
+        agent_ref: holding-20260129-1143
+      - unique_id: task-suppressing-fire-c310-01-20260129-1143
+        name: suppressing_fire
+        agent_ref: fire-suppression-20260129-1143
+      - unique_id: task-find-entry-point-c310-01-20260129-1143
+        name: find_optimal_entry_point_to_suppression_zone
+        agent_ref: entry-point-optimizer-20260129-1143
+    - id: jsbsim-c172-20260129-1143
+      type: c172
+      file_path: /opt/jsbsim/aircraft/c172
+      autonomous_tasks:
+      - unique_id: task-hold-c172-01-20260129-1143
+        name: hold
+        agent_ref: holding-20260129-1143
+    - id: jsbsim-f16-20260129-1143
+      type: f16
+      file_path: /opt/jsbsim/aircraft/f16
+      autonomous_tasks:
+      - unique_id: task-hold-f16-01-20260129-1143
+        name: hold
+        agent_ref: holding-20260129-1143
+  vrforces:
+    version: 2025.4

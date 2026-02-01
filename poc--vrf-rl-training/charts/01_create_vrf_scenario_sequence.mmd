@@ -1,0 +1,26 @@
+sequenceDiagram
+autonumber
+
+actor User
+participant VRFEditor as VRF Scenario Editor (UI/CLI)
+participant VRFStore as VRF Scenario/Mission Store
+
+note over User,VRFStore: Use-case 1: Create VRF scenario file + basic mission
+note over User,VRFStore: For POC: 1 blue player + 1 red player
+note over User,VRFStore: Outputs: mission_id/file_id + entity_id(s)
+
+User->>VRFEditor: Create simple VRF scenario
+VRFEditor->>VRFEditor: Add entities
+note right of VRFEditor: Examples:<br/>Blue jet aircraft<br/>Red jet aircraft<br/>Anti-aircraft entity (optional)
+
+User->>VRFEditor: Create basic mission
+note right of VRFEditor: Define objectives / rules / start conditions
+
+User->>VRFEditor: Manually place blue_entity
+note right of VRFEditor: Choose desired location<br/>(lat/lon/alt/heading or editor coordinates)
+
+VRFEditor->>VRFStore: Save scenario/mission
+VRFStore-->>VRFEditor: Return IDs
+note right of VRFEditor: mission_id or file_id<br/>blue_entity_id (+ optional red_entity_id)
+
+VRFEditor-->>User: Provide mission_id/file_id and blue_entity_id

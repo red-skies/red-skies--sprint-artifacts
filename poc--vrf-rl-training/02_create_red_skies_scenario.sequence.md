@@ -1,0 +1,23 @@
+```mermaid
+sequenceDiagram
+autonumber
+
+actor User
+participant RSAuthor as Red-Skies Scenario Authoring
+participant ObjectsYaml as objects.yaml (config file)
+participant VRFStore as VRF Scenario/Mission Store
+
+note over User,ObjectsYaml: Use-case 2: Create Red-Skies scenario
+note over User,ObjectsYaml: Inputs: VRF mission_id/file_id + blue_entity_id
+note over User,ObjectsYaml: For POC: mission_id/file_id is set manually
+
+User->>RSAuthor: Create Red-Skies scenario definition
+RSAuthor->>ObjectsYaml: Write objects.yaml
+note right of ObjectsYaml: Fields (example intent):<br/>vrf_mission_id or vrf_file_id<br/>blue_entity_id (entity_id)<br/>team/role mappings (blue/red)
+
+RSAuthor->>VRFStore: (Optional) Verify VRF IDs exist
+VRFStore-->>RSAuthor: OK (mission/file + entity exists)
+
+RSAuthor-->>User: Scenario ready
+note right of User: Result:<br/>Red-Skies scenario references VRF mission/file<br/>Red-Skies scenario pins blue entity_id
+```

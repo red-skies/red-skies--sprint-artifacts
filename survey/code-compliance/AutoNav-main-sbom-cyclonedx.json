@@ -1,0 +1,111 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:AutoNav-main-2026-01-29T12:00:47.103014",
+  "metadata": {
+    "timestamp": "2026-01-29T12:00:47.103030Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "AutoNav-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "gymnasium>=0.29.0",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/gymnasium>=0.29.0"
+    },
+    {
+      "type": "library",
+      "name": "numpy>=1.20.0",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/numpy>=1.20.0"
+    },
+    {
+      "type": "library",
+      "name": "stable-baselines3>=2.0.0",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/stable-baselines3>=2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "tensorboard>=2.0.0",
+      "version": "unspecified",
+      "group": "ml-rl",
+      "purl": "pkg:generic/tensorboard>=2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pyyaml>=6.0.0",
+      "version": "unspecified",
+      "group": "config-data",
+      "purl": "pkg:generic/pyyaml>=6.0.0"
+    },
+    {
+      "type": "library",
+      "name": "matplotlib>=3.5.0",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/matplotlib>=3.5.0"
+    },
+    {
+      "type": "library",
+      "name": "pygame>=2.0.0",
+      "version": "unspecified",
+      "group": "simulation",
+      "purl": "pkg:generic/pygame>=2.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pyproj>=3.0.0",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/pyproj>=3.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pytest>=7.0.0",
+      "version": "unspecified",
+      "group": "dev-tooling",
+      "purl": "pkg:generic/pytest>=7.0.0"
+    },
+    {
+      "type": "library",
+      "name": "pytest-cov>=4.0.0",
+      "version": "unspecified",
+      "group": "dev-tooling",
+      "purl": "pkg:generic/pytest-cov>=4.0.0"
+    },
+    {
+      "type": "library",
+      "name": "black>=22.0.0",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/black>=22.0.0"
+    },
+    {
+      "type": "library",
+      "name": "isort>=5.0.0",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/isort>=5.0.0"
+    },
+    {
+      "type": "library",
+      "name": "mypy>=0.990",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/mypy>=0.990"
+    }
+  ]
+}

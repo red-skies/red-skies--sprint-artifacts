@@ -1,0 +1,362 @@
+{
+  "summary": {
+    "ok": 26,
+    "flag": 0,
+    "unknown": 5,
+    "not_enriched": 1
+  },
+  "components": [
+    {
+      "name": "fastapi",
+      "version": "0.128.0",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "=?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "uvicorn[standard]",
+      "version": "0.40.0",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Tom Christie <tom@tomchristie.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "pydantic-settings",
+      "version": "2.12.0",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.3",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Delgan <delgan.py@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "aiofiles",
+      "version": "25.1.0",
+      "ecosystem": "pypi",
+      "license": "Apache-2.0",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": "Tin Tvrtkovic <tinchester@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@emotion/react",
+      "version": "^11.14.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Emotion Contributors",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@emotion/styled",
+      "version": "^11.14.1",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@microsoft/fetch-event-source",
+      "version": "^2.0.1",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Microsoft",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@mui/icons-material",
+      "version": "^7.3.5",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "MUI Team",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@mui/material",
+      "version": "^7.3.5",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "MUI Team",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@mui/material-nextjs",
+      "version": "^7.3.5",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "MUI Team",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "js-yaml",
+      "version": "^4.1.1",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Vladimir Zapparov",
+      "author_email": "dervus.grim@gmail.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "leaflet",
+      "version": "^1.9.4",
+      "ecosystem": "npm",
+      "license": "BSD-2-Clause",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "next",
+      "version": "15.3.5",
+      "ecosystem": "pypi",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "saenews",
+      "author_email": "contact@advaitlabs.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "re-resizable",
+      "version": "^6.11.2",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "bokuweb",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react",
+      "version": "^19.0.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react-dom",
+      "version": "^19.0.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react-hot-toast",
+      "version": "^2.6.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Timo Lins",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "react-leaflet",
+      "version": "^5.0.0",
+      "ecosystem": "npm",
+      "license": "Hippocratic-2.1",
+      "policy": "unknown",
+      "author_name": "Paul Le Cam",
+      "author_email": "paul@ulem.net",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "uuid",
+      "version": "^13.0.0",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "zustand",
+      "version": "^5.0.8",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Paul Henschel",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@eslint/eslintrc",
+      "version": "^3",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Nicholas C. Zakas",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@tailwindcss/postcss",
+      "version": "^4",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@types/js-yaml",
+      "version": "^4.0.9",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@types/leaflet",
+      "version": "^1.9.21",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@types/node",
+      "version": "^20",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@types/react",
+      "version": "^19",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "@types/react-dom",
+      "version": "^19",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "eslint",
+      "version": "^9",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Nicholas C. Zakas",
+      "author_email": "nicholas+npm@nczconsulting.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "eslint-config-next",
+      "version": "15.3.5",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": false
+    },
+    {
+      "name": "tailwindcss",
+      "version": "^4",
+      "ecosystem": "npm",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": null,
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "typescript",
+      "version": "^5",
+      "ecosystem": "npm",
+      "license": "Apache-2.0",
+      "policy": "ok",
+      "author_name": "Microsoft Corp.",
+      "author_email": null,
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

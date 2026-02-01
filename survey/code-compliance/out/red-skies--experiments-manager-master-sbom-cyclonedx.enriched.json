@@ -1,0 +1,295 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:red-skies--experiments-manager-master-2026-01-29T12:35:59.584698",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.584706Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "red-skies--experiments-manager-master"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "cors",
+      "version": "^2.8.5",
+      "group": "other",
+      "purl": "pkg:npm/cors@2.8.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Troy Goode"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/expressjs/cors#readme"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2018-11-04T21:00:13.277000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "express",
+      "version": "^4.19.2",
+      "group": "other",
+      "purl": "pkg:npm/express@4.19.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "TJ Holowaychuk"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://expressjs.com/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-03-25T14:30:36.103000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "version": "^4.1.0",
+      "group": "config-data",
+      "purl": "pkg:npm/js-yaml@4.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Vladimir Zapparov"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/nodeca/js-yaml"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2021-04-14T21:07:09.057000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "leaflet",
+      "version": "^1.9.4",
+      "group": "other",
+      "purl": "pkg:npm/leaflet@1.9.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://leafletjs.com/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2023-05-18T11:04:11.088000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react",
+      "version": "^18.3.1",
+      "group": "other",
+      "purl": "pkg:npm/react@18.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-04-26T16:42:26.496000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react-dom",
+      "version": "^18.3.1",
+      "group": "other",
+      "purl": "pkg:npm/react-dom@18.3.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-04-26T16:42:49.931000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react-leaflet",
+      "version": "^4.2.1",
+      "group": "other",
+      "purl": "pkg:npm/react-leaflet@4.2.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "Hippocratic-2.1"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Paul Le Cam"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react-leaflet.js.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2023-02-28T15:55:08.340000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@vitejs/plugin-react",
+      "version": "^4.3.4",
+      "group": "other",
+      "purl": "pkg:npm/%40vitejs/plugin-react@^4.3.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Evan You"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/vitejs/vite-plugin-react/tree/main/packages/plugin-react#readme"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "concurrently",
+      "version": "^9.1.0",
+      "group": "other",
+      "purl": "pkg:npm/concurrently@9.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Kimmo Brunfeldt"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/open-cli-tools/concurrently#readme"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-11-04T12:15:44.195000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "vite",
+      "version": "^6.0.6",
+      "group": "other",
+      "purl": "pkg:npm/vite@6.0.6",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Evan You"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://vite.dev"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-12-26T02:23:38.440000Z"
+        }
+      ]
+    }
+  ]
+}

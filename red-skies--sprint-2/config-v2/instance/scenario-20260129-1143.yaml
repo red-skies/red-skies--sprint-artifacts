@@ -1,0 +1,668 @@
+scenario:
+  id: scenario-nfz-avoidance-20260129-1143
+  description: Multi-agent NFZ avoidance experiment
+  duration_s: 7200
+  objects:
+  - id: playground-20260129-1143
+    type: region
+    description: ""
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40
+        - 30
+        - 0
+    region:
+      - type: Feature
+        properties:
+          name: playground-20260129-1143
+          box: 400km
+          width_km: 400
+          height_km: 400
+          center:
+            lat: 30
+            lon: -40
+        geometry:
+          type: Polygon
+          coordinates:
+            - - - -42.076894
+                - 28.201357
+              - - -37.923106
+                - 28.201357
+              - - -37.923106
+                - 31.798643
+              - - -42.076894
+                - 31.798643
+              - - -42.076894
+                - 28.201357
+    behavior: ""
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: suppression_zone-20260129-1143
+    type: region
+    description: ""
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40
+        - 30
+        - 0
+    region:
+      - type: Feature
+        properties:
+          name: suppression_zone-20260129-1143
+          box: 200km
+          width_km: 200
+          height_km: 200
+          center:
+            lat: 30
+            lon: -40
+        geometry:
+          type: Polygon
+          coordinates:
+            - - - -41.038447
+                - 29.100678
+              - - -38.961553
+                - 29.100678
+              - - -38.961553
+                - 30.899322
+              - - -41.038447
+                - 30.899322
+              - - -41.038447
+                - 29.100678
+  - id: aircraft-1-20260129-1143
+    type: aircraft
+    description: ""
+    initial_position:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -41.021623718553485
+        - 30.92929435147895
+        - 1500.0
+    autonomous_tasks:
+    - unique_id: task-hold-aircraft-1-20260129-1143
+      name: hold
+      agent_ref: holding-20260129-1143
+    behavior: ""
+    parameters:
+      initial_state:
+        position:
+          type: Feature
+          properties: {}
+          geometry:
+            type: Point
+            coordinates:
+            - -41.021623718553485
+            - 30.92929435147895
+            - 1500.0
+        heading: 134.8643926596137
+        speed: 90.0
+  - id: aircraft-2-20260129-1143
+    type: aircraft
+    description: ""
+    initial_position:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -41.011623718553485
+        - 30.91929435147895
+        - 1500.0
+    autonomous_tasks:
+    - unique_id: task-hold-aircraft-2-20260129-1143
+      name: hold
+      agent_ref: holding-20260129-1143
+    - unique_id: task-suppressing-fire-aircraft-2-20260129-1143
+      name: suppressing_fire
+      agent_ref: fire-suppression-20260129-1143
+    - unique_id: task-find-entry-point-aircraft-2-20260129-1143
+      name: find_optimal_entry_point_to_suppression_zone
+      agent_ref: entry-point-optimizer-20260129-1143
+    behavior: ""
+    parameters:
+      initial_state:
+        position:
+          type: Feature
+          properties: {}
+          geometry:
+            type: Point
+            coordinates:
+            - -41.011623718553485
+            - 30.91929435147895
+            - 1500.0
+        heading: 120.0
+        speed: 90.0
+  - id: nfz-1-20260129-1143
+    type: circle
+    description: nfz_1767161526954
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.06164550781251
+        - 30.725297006907784
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.06164550781251
+        - 30.725297006907784
+        - 1500.0
+    radius:
+    - 6000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-2-20260129-1143
+    type: circle
+    description: nfz_1767161531299
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.42419433593751
+        - 30.232952424413543
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.42419433593751
+        - 30.232952424413543
+        - 1500.0
+    radius:
+    - 6000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-3-20260129-1143
+    type: circle
+    description: nfz_1767161569108
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.46838378906251
+        - 30.206853837629893
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.46838378906251
+        - 30.206853837629893
+        - 1500.0
+    radius:
+    - 15000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-4-20260129-1143
+    type: circle
+    description: nfz_1767161722758
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.70983886718751
+        - 30.07385209711348
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.70983886718751
+        - 30.07385209711348
+        - 1500.0
+    radius:
+    - 10000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-5-20260129-1143
+    type: circle
+    description: nfz_1767161728113
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.62744140625001
+        - 29.71618878280715
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.62744140625001
+        - 29.71618878280715
+        - 1500.0
+    radius:
+    - 15000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-6-20260129-1143
+    type: circle
+    description: nfz_1767161770963
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.93530273437501
+        - 29.79535895317893
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.93530273437501
+        - 29.79535895317893
+        - 1500.0
+    radius:
+    - 42399.10096806246
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-7-20260129-1143
+    type: circle
+    description: nfz_1767161796148
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.5889892578125
+        - 30.519687036940812
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.5889892578125
+        - 30.519687036940812
+        - 1500.0
+    radius:
+    - 41404.31490557834
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-8-20260129-1143
+    type: circle
+    description: nfz_1767161897634
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.18249511718751
+        - 29.328941996152366
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.18249511718751
+        - 29.328941996152366
+        - 1500.0
+    radius:
+    - 10000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-9-20260129-1143
+    type: circle
+    description: nfz_1767161940265
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.891357421875
+        - 30.36342943687182
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.891357421875
+        - 30.36342943687182
+        - 1500.0
+    radius:
+    - 35092.349193359434
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-10-20260129-1143
+    type: circle
+    description: nfz_1767161965654
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.28161621093751
+        - 30.62371611709809
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.28161621093751
+        - 30.62371611709809
+        - 1500.0
+    radius:
+    - 33883.82019178133
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-11-20260129-1143
+    type: circle
+    description: nfz_1767161974889
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.11132812500001
+        - 29.940277053448302
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.11132812500001
+        - 29.940277053448302
+        - 1500.0
+    radius:
+    - 6000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-12-20260129-1143
+    type: circle
+    description: nfz_1767161983114
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.254150390625
+        - 29.40131513797947
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.254150390625
+        - 29.40131513797947
+        - 1500.0
+    radius:
+    - 33350.547882245584
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-13-20260129-1143
+    type: circle
+    description: nfz_1767161995285
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.6881103515625
+        - 29.39653082428321
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.6881103515625
+        - 29.39653082428321
+        - 1500.0
+    radius:
+    - 6000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-14-20260129-1143
+    type: circle
+    description: nfz_1767162179761
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.21133422851563
+        - 29.71310607206852
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.21133422851563
+        - 29.71310607206852
+        - 1500.0
+    radius:
+    - 20000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-15-20260129-1143
+    type: circle
+    description: nfz_1767162191288
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.93255615234375
+        - 29.7858382929665
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.93255615234375
+        - 29.7858382929665
+        - 1500.0
+    radius:
+    - 6000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-16-20260129-1143
+    type: circle
+    description: nfz_1767162193969
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.63043212890626
+        - 29.810764502543588
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.63043212890626
+        - 29.810764502543588
+        - 1500.0
+    radius:
+    - 20000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-17-20260129-1143
+    type: circle
+    description: nfz_1767162287624
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.73181152343751
+        - 29.31512806589868
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -40.73181152343751
+        - 29.31512806589868
+        - 1500.0
+    radius:
+    - 15000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf
+  - id: nfz-18-20260129-1143
+    type: circle
+    description: nfz_1767162313368
+    geolocation:
+    - type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.35852050781251
+        - 29.484677989258145
+        - 1500.0
+    centroid:
+      type: Feature
+      properties: {}
+      geometry:
+        type: Point
+        coordinates:
+        - -39.35852050781251
+        - 29.484677989258145
+        - 1500.0
+    radius:
+    - 20000.0
+    behavior: no_fly_zone
+    schedule_on: always
+    parameters:
+      initial_state: 1
+      probability: 0.0
+      time: .inf

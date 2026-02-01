@@ -1,0 +1,754 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:Rakia-C2-main-2026-01-29T12:00:47.107046",
+  "metadata": {
+    "timestamp": "2026-01-29T12:00:47.107059Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "Rakia-C2-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "fastapi",
+      "version": "0.128.0",
+      "group": "other",
+      "purl": "pkg:pypi/fastapi@0.128.0",
+      "supplier": {
+        "name": "=?utf-8?q?Sebasti=C3=A1n_Ram=C3=ADrez?= <tiangolo@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/fastapi/fastapi"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uvicorn[standard]",
+      "version": "0.40.0",
+      "group": "other",
+      "purl": "pkg:pypi/uvicorn@0.40.0",
+      "supplier": {
+        "name": "Tom Christie <tom@tomchristie.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://uvicorn.dev/"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/Kludex/uvicorn"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "pydantic-settings",
+      "version": "2.12.0",
+      "group": "other",
+      "purl": "pkg:pypi/pydantic-settings@2.12.0",
+      "supplier": {
+        "name": "Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/pydantic/pydantic-settings"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "0.7.3",
+      "group": "dev-tooling",
+      "purl": "pkg:pypi/loguru@0.7.3",
+      "supplier": {
+        "name": "Delgan <delgan.py@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Delgan/loguru"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "aiofiles",
+      "version": "25.1.0",
+      "group": "other",
+      "purl": "pkg:pypi/aiofiles@25.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Tin Tvrtkovic <tinchester@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "vcs",
+          "url": "https://github.com/Tinche/aiofiles"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@emotion/react",
+      "version": "^11.14.0",
+      "group": "other",
+      "purl": "pkg:npm/%40emotion/react@^11.14.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Emotion Contributors"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/emotion-js/emotion/tree/main#readme"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@emotion/styled",
+      "version": "^11.14.1",
+      "group": "other",
+      "purl": "pkg:npm/%40emotion/styled@^11.14.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/emotion-js/emotion/tree/main#readme"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@microsoft/fetch-event-source",
+      "version": "^2.0.1",
+      "group": "other",
+      "purl": "pkg:npm/%40microsoft/fetch-event-source@^2.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Microsoft"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Azure/fetch-event-source#readme"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@mui/icons-material",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:npm/%40mui/icons-material@^7.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "MUI Team"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mui.com/material-ui/material-icons/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@mui/material",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:npm/%40mui/material@^7.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "MUI Team"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mui.com/material-ui/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@mui/material-nextjs",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:npm/%40mui/material-nextjs@^7.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "MUI Team"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://mui.com/material-ui/guides/nextjs/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "version": "^4.1.1",
+      "group": "config-data",
+      "purl": "pkg:npm/js-yaml@4.1.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Vladimir Zapparov"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/nodeca/js-yaml"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2025-11-12T15:18:03.524000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "leaflet",
+      "version": "^1.9.4",
+      "group": "other",
+      "purl": "pkg:npm/leaflet@1.9.4",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://leafletjs.com/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2023-05-18T11:04:11.088000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "next",
+      "version": "15.3.5",
+      "group": "other",
+      "purl": "pkg:pypi/next@15.3.5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "saenews"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/dheerajmpai/saenews/"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "re-resizable",
+      "version": "^6.11.2",
+      "group": "other",
+      "purl": "pkg:npm/re-resizable@6.11.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "bokuweb"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/bokuweb/react-resizable-box"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2025-02-24T23:34:39.020000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react",
+      "version": "^19.0.0",
+      "group": "other",
+      "purl": "pkg:npm/react@19.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-12-05T18:10:21.804000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react-dom",
+      "version": "^19.0.0",
+      "group": "other",
+      "purl": "pkg:npm/react-dom@19.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react.dev/"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-12-05T18:10:30.516000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react-hot-toast",
+      "version": "^2.6.0",
+      "group": "other",
+      "purl": "pkg:npm/react-hot-toast@2.6.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Timo Lins"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/timolins/react-hot-toast#readme"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2025-08-15T16:02:39.493000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "react-leaflet",
+      "version": "^5.0.0",
+      "group": "other",
+      "purl": "pkg:npm/react-leaflet@5.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "Hippocratic-2.1"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Paul Le Cam"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://react-leaflet.js.org"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2024-12-14T08:44:03.462000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "^13.0.0",
+      "group": "other",
+      "purl": "pkg:npm/uuid@13.0.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/uuidjs/uuid#readme"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2025-09-08T18:43:39.868000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "zustand",
+      "version": "^5.0.8",
+      "group": "other",
+      "purl": "pkg:npm/zustand@5.0.8",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Paul Henschel"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/pmndrs/zustand"
+        }
+      ],
+      "properties": [
+        {
+          "name": "release:published",
+          "value": "2025-08-19T23:19:16.970000Z"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@eslint/eslintrc",
+      "version": "^3",
+      "group": "other",
+      "purl": "pkg:npm/%40eslint/eslintrc@^3",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Nicholas C. Zakas"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/eslint/eslintrc#readme"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@tailwindcss/postcss",
+      "version": "^4",
+      "group": "other",
+      "purl": "pkg:npm/%40tailwindcss/postcss@^4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://tailwindcss.com"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@types/js-yaml",
+      "version": "^4.0.9",
+      "group": "config-data",
+      "purl": "pkg:npm/%40types/js-yaml@^4.0.9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/js-yaml"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@types/leaflet",
+      "version": "^1.9.21",
+      "group": "other",
+      "purl": "pkg:npm/%40types/leaflet@^1.9.21",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/leaflet"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "^20",
+      "group": "other",
+      "purl": "pkg:npm/%40types/node@^20",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/node"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@types/react",
+      "version": "^19",
+      "group": "other",
+      "purl": "pkg:npm/%40types/react@^19",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "@types/react-dom",
+      "version": "^19",
+      "group": "other",
+      "purl": "pkg:npm/%40types/react-dom@^19",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types/react-dom"
+        },
+        {
+          "type": "vcs",
+          "url": "https://github.com/DefinitelyTyped/DefinitelyTyped.git"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint",
+      "version": "^9",
+      "group": "other",
+      "purl": "pkg:npm/eslint@9",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Nicholas C. Zakas"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://eslint.org"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "eslint-config-next",
+      "version": "15.3.5",
+      "group": "other",
+      "purl": "pkg:generic/eslint-config-next"
+    },
+    {
+      "type": "library",
+      "name": "tailwindcss",
+      "version": "^4",
+      "group": "other",
+      "purl": "pkg:npm/tailwindcss@4",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://tailwindcss.com"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "^5",
+      "group": "other",
+      "purl": "pkg:npm/typescript@5",
+      "licenses": [
+        {
+          "license": {
+            "id": "Apache-2.0"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Microsoft Corp."
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://www.typescriptlang.org/"
+        }
+      ]
+    }
+  ]
+}

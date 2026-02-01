@@ -20,7 +20,7 @@ reward_config:
     calculation_tick_s: 1
     suppression_reward: f(remaining_mission_duration, total_fires, total_suppressed_fires) # Decay function for remaining duration of mission  
   nfz_violation: -200
-    
+
 playground:
   name: Atlantic ocean
   region:
@@ -66,7 +66,7 @@ aircraft: # Find model, define meta-data, and Shimon will define constraints
       type: manual
       lat: 31.68
       lon: 34.48
-      speed_ms: 70        # initial cruise speed
+      speed_ms: 70         # initial cruise speed
       heading_deg: 90      # east
       altitude: 100        # Keep it fixed (2D operation) for phase 1, phase 2, 3D
     suppression_material: water

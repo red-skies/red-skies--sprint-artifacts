@@ -1,0 +1,109 @@
+{
+  "summary": {
+    "ok": 52,
+    "flag": 1,
+    "unknown": 27,
+    "not_enriched": 1
+  },
+  "files": [
+    {
+      "input": "./AutoNav-main-sbom-cyclonedx.json",
+      "output": "./out/AutoNav-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/AutoNav-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 6,
+        "flag": 0,
+        "unknown": 7,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./Rakia-C2-main-sbom-cyclonedx.json",
+      "output": "./out/Rakia-C2-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/Rakia-C2-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 26,
+        "flag": 0,
+        "unknown": 5,
+        "not_enriched": 1
+      }
+    },
+    {
+      "input": "./Rakia-main-sbom-cyclonedx.json",
+      "output": "./out/Rakia-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/Rakia-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 6,
+        "flag": 1,
+        "unknown": 3,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./jsbsim_server-main-sbom-cyclonedx.json",
+      "output": "./out/jsbsim_server-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/jsbsim_server-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 1,
+        "flag": 0,
+        "unknown": 2,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./red-skies--experiments-manager-master-sbom-cyclonedx.json",
+      "output": "./out/red-skies--experiments-manager-master-sbom-cyclonedx.enriched.json",
+      "report": "./reports/red-skies--experiments-manager-master-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 9,
+        "flag": 0,
+        "unknown": 1,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./rl-agent-renderer-master-sbom-cyclonedx.json",
+      "output": "./out/rl-agent-renderer-master-sbom-cyclonedx.enriched.json",
+      "report": "./reports/rl-agent-renderer-master-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 1,
+        "flag": 0,
+        "unknown": 2,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./skysim-main-sbom-cyclonedx.json",
+      "output": "./out/skysim-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/skysim-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 2,
+        "flag": 0,
+        "unknown": 4,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./skysim_bridge-main-sbom-cyclonedx.json",
+      "output": "./out/skysim_bridge-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/skysim_bridge-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 0,
+        "flag": 0,
+        "unknown": 1,
+        "not_enriched": 0
+      }
+    },
+    {
+      "input": "./skysim_wrapper-main-sbom-cyclonedx.json",
+      "output": "./out/skysim_wrapper-main-sbom-cyclonedx.enriched.json",
+      "report": "./reports/skysim_wrapper-main-sbom-cyclonedx.report.json",
+      "summary": {
+        "ok": 1,
+        "flag": 0,
+        "unknown": 2,
+        "not_enriched": 0
+      }
+    }
+  ]
+}

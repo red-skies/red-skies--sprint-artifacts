@@ -1,0 +1,41 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:jsbsim_server-main-2026-01-29T12:35:59.583149",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.583164Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "jsbsim_server-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "grpcio",
+      "version": "unspecified",
+      "group": "config-data",
+      "purl": "pkg:generic/grpcio"
+    },
+    {
+      "type": "library",
+      "name": "jsbsim",
+      "version": "unspecified",
+      "group": "simulation",
+      "purl": "pkg:generic/jsbsim"
+    },
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "unspecified",
+      "group": "dev-tooling",
+      "purl": "pkg:generic/loguru"
+    }
+  ]
+}

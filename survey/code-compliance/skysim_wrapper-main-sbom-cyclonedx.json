@@ -1,0 +1,41 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:skysim_wrapper-main-2026-01-29T12:35:59.587220",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.587229Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "skysim_wrapper-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "unspecified",
+      "group": "dev-tooling",
+      "purl": "pkg:generic/loguru"
+    },
+    {
+      "type": "library",
+      "name": "pydantic",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/pydantic"
+    },
+    {
+      "type": "library",
+      "name": "pyyaml",
+      "version": "unspecified",
+      "group": "config-data",
+      "purl": "pkg:generic/pyyaml"
+    }
+  ]
+}

@@ -1,0 +1,244 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:Rakia-C2-main-2026-01-29T12:00:47.107046",
+  "metadata": {
+    "timestamp": "2026-01-29T12:00:47.107059Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "Rakia-C2-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "fastapi",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/fastapi"
+    },
+    {
+      "type": "library",
+      "name": "uvicorn[standard]",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/uvicorn[standard]"
+    },
+    {
+      "type": "library",
+      "name": "pydantic-settings",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/pydantic-settings"
+    },
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "unspecified",
+      "group": "dev-tooling",
+      "purl": "pkg:generic/loguru"
+    },
+    {
+      "type": "library",
+      "name": "aiofiles",
+      "version": "unspecified",
+      "group": "other",
+      "purl": "pkg:generic/aiofiles"
+    },
+    {
+      "type": "library",
+      "name": "@emotion/react",
+      "version": "^11.14.0",
+      "group": "other",
+      "purl": "pkg:generic/@emotion/react"
+    },
+    {
+      "type": "library",
+      "name": "@emotion/styled",
+      "version": "^11.14.1",
+      "group": "other",
+      "purl": "pkg:generic/@emotion/styled"
+    },
+    {
+      "type": "library",
+      "name": "@microsoft/fetch-event-source",
+      "version": "^2.0.1",
+      "group": "other",
+      "purl": "pkg:generic/@microsoft/fetch-event-source"
+    },
+    {
+      "type": "library",
+      "name": "@mui/icons-material",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:generic/@mui/icons-material"
+    },
+    {
+      "type": "library",
+      "name": "@mui/material",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:generic/@mui/material"
+    },
+    {
+      "type": "library",
+      "name": "@mui/material-nextjs",
+      "version": "^7.3.5",
+      "group": "other",
+      "purl": "pkg:generic/@mui/material-nextjs"
+    },
+    {
+      "type": "library",
+      "name": "js-yaml",
+      "version": "^4.1.1",
+      "group": "config-data",
+      "purl": "pkg:generic/js-yaml"
+    },
+    {
+      "type": "library",
+      "name": "leaflet",
+      "version": "^1.9.4",
+      "group": "other",
+      "purl": "pkg:generic/leaflet"
+    },
+    {
+      "type": "library",
+      "name": "next",
+      "version": "15.3.5",
+      "group": "other",
+      "purl": "pkg:generic/next"
+    },
+    {
+      "type": "library",
+      "name": "re-resizable",
+      "version": "^6.11.2",
+      "group": "other",
+      "purl": "pkg:generic/re-resizable"
+    },
+    {
+      "type": "library",
+      "name": "react",
+      "version": "^19.0.0",
+      "group": "other",
+      "purl": "pkg:generic/react"
+    },
+    {
+      "type": "library",
+      "name": "react-dom",
+      "version": "^19.0.0",
+      "group": "other",
+      "purl": "pkg:generic/react-dom"
+    },
+    {
+      "type": "library",
+      "name": "react-hot-toast",
+      "version": "^2.6.0",
+      "group": "other",
+      "purl": "pkg:generic/react-hot-toast"
+    },
+    {
+      "type": "library",
+      "name": "react-leaflet",
+      "version": "^5.0.0",
+      "group": "other",
+      "purl": "pkg:generic/react-leaflet"
+    },
+    {
+      "type": "library",
+      "name": "uuid",
+      "version": "^13.0.0",
+      "group": "other",
+      "purl": "pkg:generic/uuid"
+    },
+    {
+      "type": "library",
+      "name": "zustand",
+      "version": "^5.0.8",
+      "group": "other",
+      "purl": "pkg:generic/zustand"
+    },
+    {
+      "type": "library",
+      "name": "@eslint/eslintrc",
+      "version": "^3",
+      "group": "other",
+      "purl": "pkg:generic/@eslint/eslintrc"
+    },
+    {
+      "type": "library",
+      "name": "@tailwindcss/postcss",
+      "version": "^4",
+      "group": "other",
+      "purl": "pkg:generic/@tailwindcss/postcss"
+    },
+    {
+      "type": "library",
+      "name": "@types/js-yaml",
+      "version": "^4.0.9",
+      "group": "config-data",
+      "purl": "pkg:generic/@types/js-yaml"
+    },
+    {
+      "type": "library",
+      "name": "@types/leaflet",
+      "version": "^1.9.21",
+      "group": "other",
+      "purl": "pkg:generic/@types/leaflet"
+    },
+    {
+      "type": "library",
+      "name": "@types/node",
+      "version": "^20",
+      "group": "other",
+      "purl": "pkg:generic/@types/node"
+    },
+    {
+      "type": "library",
+      "name": "@types/react",
+      "version": "^19",
+      "group": "other",
+      "purl": "pkg:generic/@types/react"
+    },
+    {
+      "type": "library",
+      "name": "@types/react-dom",
+      "version": "^19",
+      "group": "other",
+      "purl": "pkg:generic/@types/react-dom"
+    },
+    {
+      "type": "library",
+      "name": "eslint",
+      "version": "^9",
+      "group": "other",
+      "purl": "pkg:generic/eslint"
+    },
+    {
+      "type": "library",
+      "name": "eslint-config-next",
+      "version": "15.3.5",
+      "group": "other",
+      "purl": "pkg:generic/eslint-config-next"
+    },
+    {
+      "type": "library",
+      "name": "tailwindcss",
+      "version": "^4",
+      "group": "other",
+      "purl": "pkg:generic/tailwindcss"
+    },
+    {
+      "type": "library",
+      "name": "typescript",
+      "version": "^5",
+      "group": "other",
+      "purl": "pkg:generic/typescript"
+    }
+  ]
+}

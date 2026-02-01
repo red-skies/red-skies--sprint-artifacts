@@ -1,0 +1,21 @@
+experiment:
+  id: exp-nfz-hold-20260129-1143
+  title: NFZ Avoidance – Holding Pattern (JSBSim)
+  description: Experiment wiring scenario, agent, and simulator platform without coupling their internal configs.
+  scenario:
+    file: scenario-20260129-1143.yaml
+  agents:
+    file: ../spec/agents.yaml
+    entrypoint: agent.main:run
+  platform:
+    file: ../spec/platform.yaml
+  runtime:
+    step_hz: 20
+    max_duration_sec: 1800
+    logging:
+      level: info
+      artifacts_path: ./artifacts
+  outputs:
+    telemetry: ./artifacts/telemetry.jsonl
+    episodes: ./artifacts/episodes/
+    models: ./artifacts/models/

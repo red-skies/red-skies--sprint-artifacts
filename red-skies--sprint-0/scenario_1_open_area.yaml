@@ -10,8 +10,6 @@ mission_definition:
       weight: 0.7
     fire_distance:
       weight: 0.3
-  fires_nfz: # Default NFZ area for fires
-    radius_m: 3000
 
 playground:
   name: Atlantic ocean

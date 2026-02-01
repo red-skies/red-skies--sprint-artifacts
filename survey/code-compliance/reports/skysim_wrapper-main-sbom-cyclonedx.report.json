@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "ok": 1,
+    "flag": 0,
+    "unknown": 2,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "loguru",
+      "version": "0.7.3",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Delgan <delgan.py@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "pydantic",
+      "version": "2.12.5",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Samuel Colvin <s@muelcolvin.com>, Eric Jolibois <em.jolibois@gmail.com>, Hasan Ramezani <hasan.r67@gmail.com>, Adrian Garcia Badaracco <1755071+adriangb@users.noreply.github.com>, Terrence Dorsey <terry@pydantic.dev>, David Montague <david@pydantic.dev>, Serge Matveenko <lig@countzero.co>, Marcelo Trylesinski <marcelotryle@gmail.com>, Sydney Runkle <sydneymarierunkle@gmail.com>, David Hewitt <mail@davidhewitt.io>, Alex Hall <alex.mojaki@gmail.com>, Victorien Plot <contact@vctrn.dev>, Douwe Maan <hi@douwe.me>",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "pyyaml",
+      "version": "6.0.3",
+      "ecosystem": "pypi",
+      "license": "MIT",
+      "policy": "ok",
+      "author_name": "Kirill Simonov",
+      "author_email": "xi@resolvent.net",
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}

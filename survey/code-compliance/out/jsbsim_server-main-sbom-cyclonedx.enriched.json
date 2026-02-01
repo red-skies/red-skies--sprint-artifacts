@@ -1,0 +1,82 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.5",
+  "serialNumber": "urn:uuid:jsbsim_server-main-2026-01-29T12:35:59.583149",
+  "metadata": {
+    "timestamp": "2026-01-29T12:35:59.583164Z",
+    "tools": [
+      {
+        "vendor": "ChatGPT",
+        "name": "Dependency Mapper"
+      }
+    ],
+    "component": {
+      "type": "application",
+      "name": "jsbsim_server-main"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": "grpcio",
+      "version": "1.76.0",
+      "group": "config-data",
+      "purl": "pkg:pypi/grpcio@1.76.0",
+      "licenses": [
+        {
+          "license": {
+            "name": "Apache License 2.0"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "The gRPC Authors"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://grpc.io"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "jsbsim",
+      "version": "1.2.3",
+      "group": "simulation",
+      "purl": "pkg:pypi/jsbsim@1.2.3",
+      "licenses": [
+        {
+          "license": {
+            "name": "LGPL 2.1"
+          }
+        }
+      ],
+      "supplier": {
+        "name": "Jon S. Berndt et al."
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/JSBSim-Team/jsbsim"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "name": "loguru",
+      "version": "0.7.3",
+      "group": "dev-tooling",
+      "purl": "pkg:pypi/loguru@0.7.3",
+      "supplier": {
+        "name": "Delgan <delgan.py@gmail.com>"
+      },
+      "externalReferences": [
+        {
+          "type": "website",
+          "url": "https://github.com/Delgan/loguru"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+sequenceDiagram
+autonumber
+
+actor User
+participant Trainer as Experiment Runner (Training Mode)
+participant VRFEngine as VRF Engine (Lockstep Sim)
+participant VRFAdapter as VRF Adapter (gRPC/Protobuf)
+participant RLAgent as RL Agent
+
+User->>User: Use-case 3 - training mode (lockstep)
+User->>User: step_time = 0.02
+User->>User: actions = [{entity_id, heading_change_deg}] where heading_change_deg in [-30, +30]
+
+User->>Trainer: Start experiment training mode
+Trainer->>Trainer: step_time=0.02
+Trainer->>Trainer: load scenario config
+
+Trainer->>VRFAdapter: Initialize
+VRFAdapter->>VRFEngine: Load scenario/mission
+VRFEngine-->>VRFAdapter: Ready + initial state
+
+loop Each tick (dt=0.02)
+Trainer->>VRFEngine: Step 1 tick lockstep
+VRFEngine-->>Trainer: Tick complete paused
+VRFEngine-->>VRFAdapter: Emit entity_state world_state
+VRFAdapter->>VRFAdapter: Forward full world state to RL agent
+VRFAdapter->>RLAgent: Observations gRPC Protobuf
+RLAgent->>RLAgent: Observations include all entities or full world state
+RLAgent->>RLAgent: Compute action
+RLAgent->>RLAgent: heading_change only clamp to +/-30 deg
+RLAgent->>VRFAdapter: step actions array
+VRFAdapter->>VRFAdapter: actions = [{entity_id, heading_change_deg}]
+alt entity_id not found
+VRFAdapter-->>RLAgent: Error entity_id not found
+VRFAdapter-->>Trainer: Report error
+else entity_id found
+VRFAdapter->>VRFEngine: Apply heading_change to entity
+VRFEngine-->>VRFAdapter: Applied
+end
+VRFAdapter-->>Trainer: Tick finished all processes complete
+end
+
+Trainer-->>User: Experiment done (metrics/logs/artifacts)

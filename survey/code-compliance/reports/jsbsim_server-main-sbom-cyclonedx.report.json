@@ -1,0 +1,43 @@
+{
+  "summary": {
+    "ok": 1,
+    "flag": 0,
+    "unknown": 2,
+    "not_enriched": 0
+  },
+  "components": [
+    {
+      "name": "grpcio",
+      "version": "1.76.0",
+      "ecosystem": "pypi",
+      "license": "Apache License 2.0",
+      "policy": "ok",
+      "author_name": "The gRPC Authors",
+      "author_email": "grpc-io@googlegroups.com",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "jsbsim",
+      "version": "1.2.3",
+      "ecosystem": "pypi",
+      "license": "LGPL 2.1",
+      "policy": "unknown",
+      "author_name": "Jon S. Berndt et al.",
+      "author_email": "jsbsim-users@lists.sourceforge.net",
+      "origin_country": null,
+      "enriched": true
+    },
+    {
+      "name": "loguru",
+      "version": "0.7.3",
+      "ecosystem": "pypi",
+      "license": null,
+      "policy": "unknown",
+      "author_name": null,
+      "author_email": "Delgan <delgan.py@gmail.com>",
+      "origin_country": null,
+      "enriched": true
+    }
+  ]
+}
